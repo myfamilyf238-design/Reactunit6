@@ -1,6 +1,6 @@
 const students = [
   {
-    id: 1,
+    id: "1", 
     name: "Ayesha Iram",
     age: 20,
     course: "B.Tech",
@@ -10,7 +10,7 @@ const students = [
     about: "Passionate about web development."
   },
   {
-    id: 2,
+    id: "2", 
     name: "Ruksar Mahek Sultana",
     age: 19,
     course: "B.Sc Computer Science",
@@ -20,7 +20,7 @@ const students = [
     about: "Want to become Frontend Developer."
   },
   {
-    id: 3,
+    id: "3", 
     name: "Md Khaled",
     age: 22,
     course: "BCA",

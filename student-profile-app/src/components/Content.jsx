@@ -3,10 +3,7 @@ import students from "../data/data";
 
 function Content() {
   const { id } = useParams();
-
-  const student = students.find(
-    (item) => item.id === Number(id)
-  );
+  const student = students.find((item) => item.id === id);
 
   if (!student) {
     return (
@@ -20,14 +17,12 @@ function Content() {
   return (
     <div>
       <h1>{student.name}</h1>
-
       <p><strong>Age:</strong> {student.age}</p>
       <p><strong>Course:</strong> {student.course}</p>
       <p><strong>Gender:</strong> {student.gender}</p>
       <p><strong>Email:</strong> {student.email}</p>
       <p><strong>College:</strong> {student.college}</p>
       <p><strong>About:</strong> {student.about}</p>
-
       <Link to="/">← Back to Home</Link>
     </div>
   );
